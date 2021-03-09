@@ -1,19 +1,7 @@
 @import 'sass-components/globals';
 @import 'sass-components/typography';
 @import 'sass-components/buttons';
-
-html {
-    scroll-behavior: smooth;
-}
-body {
-    //@include set-background($back-dark);
-    //display: flex;
-    //align-items: center;
-    /*& .home, .content {
-        display: flex;
-        align-items: center;
-    }*/
-}
+@import 'sass-components/mainstyle';
 
 @import 'sass-components/pc';
 @import 'sass-components/phone';
