@@ -1,6 +1,6 @@
-@use 'reset.scss';
-@use 'typography.scss';
-@use '../abstracts/abstract.scss';
+@forward 'reset.scss';
+@forward 'typography.scss';
+@use '../abstracts/abstracts.scss';
 
 .transition-fade {
     transition: 0.4s;
