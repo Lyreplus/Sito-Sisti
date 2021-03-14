@@ -1,2 +1,12 @@
 @use 'reset.scss';
 @use 'typography.scss';
+@use '../abstracts/abstract.scss';
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
