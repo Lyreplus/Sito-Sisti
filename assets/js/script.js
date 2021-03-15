@@ -1,1 +1,1 @@
-const swup = new Swup()
+console.log("script");
