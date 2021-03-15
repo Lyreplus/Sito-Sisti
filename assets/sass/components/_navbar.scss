@@ -1,0 +1,22 @@
+@use '../abstracts/abstracts';
+
+.navbar {
+    background: abstracts.$gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    font-size: 1rem;
+
+    box-shadow: 0 .4em #B2965F, 0 .5em 1em rgba(0,0,0,.5);
+
+    padding-left: 3em;
+    
+    a {
+        font-size: 1.3em;
+        margin: 1.7em 1.7em;
+    }
+    a#current {
+        box-shadow: 0 .1em abstracts.$brown-light;
+    }
+}
