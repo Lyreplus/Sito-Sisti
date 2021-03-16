@@ -2,6 +2,10 @@
 @forward 'typography.scss';
 @use '../abstracts/abstracts.scss';
 
+*, *::after, *::before {
+  overflow-x: hidden;
+}
+
 body {
   background: abstracts.$white;
 }

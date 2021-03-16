@@ -1,14 +1,27 @@
 @use '../abstracts/abstracts.scss';
 
-$main: 'Playfair Display', serif;
+$secondary-font: 'Playfair Display', serif;
+$primary-font: 'Oswald', sans-serif;
+
+h1, h2, h3 {
+    font-family: $primary-font;
+}
+
+h1 {
+    color: abstracts.$black;
+    font-size: 4em;
+    font-weight: 700;
+}
+h2 {
+    color: abstracts.$gray;
+}
 
 a {
     color: abstracts.$brown-light;
     text-decoration: none;
-    font-family: $main;
+    font-family: $primary-font;
 
     font-size: 1em;
-
     
     transition: font-weight 300ms ease-in-out;
 }
