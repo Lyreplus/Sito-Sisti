@@ -1,6 +1,10 @@
-//@use 'reset.scss';
-@use 'typography.scss';
+@forward 'reset.scss';
+@forward 'typography.scss';
 @use '../abstracts/abstracts.scss';
+
+body {
+  background: abstracts.$white;
+}
 
 .transition-fade {
     transition: 0.4s;

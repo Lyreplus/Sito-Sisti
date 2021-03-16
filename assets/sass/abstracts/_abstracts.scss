@@ -1,4 +1,4 @@
-@use 'functions.scss';
-@use 'mixins.scss';
-@use 'placeholders.scss';
-@use 'variables.scss';
+@forward 'functions.scss';
+@forward 'mixins.scss';
+@forward 'placeholders.scss';
+@forward 'variables.scss';
