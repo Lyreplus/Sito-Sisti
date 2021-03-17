@@ -1,7 +1,7 @@
 @use '../abstracts/abstracts';
 
 body {
-    background-color: abstracts.$gray-light;
+    background-color: abstracts.$brown-light;
 }
 
 .title {
@@ -63,29 +63,37 @@ body {
     height: 100vh;
     background-color: abstracts.$gray-light;
 }
-.bottom-gray::after {
+.bottom-gold {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    content: "";
     background-color: abstracts.$brown-light;
-    clip-path: polygon(50% 74%, 97% 100%, 100% 100%);
+    clip-path: polygon(100% 97%, 50% 74%, 100% 100%);
 }
 
 .shadow {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    filter: drop-shadow(0 0 5em rgba(0,0,0,0.7));
+    filter: drop-shadow(0 -13em 5em rgba(0,0,0,0.7));
 }
 
 
 .section2 {
+    z-index: 100;
     position: absolute;
     top: 100vh;
     font-size: 2rem;
     width: 100vw;
-    margin: 2em 15vw;
+    
+    .clip-path {
+        background: abstracts.$gray-light;
+        clip-path: polygon(100% 0, 100% 100%, 23% 100%, 0 40%, 0 0);
+    }
+    
+    .part {
+        margin: 0 15vw;
+    }
 
     h2 {
         overflow-y: hidden;
@@ -96,5 +104,17 @@ body {
 
     img {
         width: 70vw;
+        margin-bottom: 5vh;
     }
+}
+
+.triangle {
+    margin-bottom: 0;
+    position: absolute;
+    width: 15vw;
+    height: 50vh;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background: abstracts.$white;
+    bottom: 0;
+    left: 0;
 }
