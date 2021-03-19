@@ -8,14 +8,14 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: abstracts.$black;
+    color: abstracts.$white;
     font-size: 4em;
     font-weight: 700;
     border-bottom: .05em abstracts.$brown-dark solid;
     padding: 0.1em;
 }
 h2 {
-    color: abstracts.$gray;
+    color: abstracts.$white;
     font-size: 2em;
     border-bottom: .05em abstracts.$brown-dark solid;
     padding: 0.1em;
