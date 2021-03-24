@@ -1,20 +1,29 @@
 @use '../abstracts/abstracts';
 
 .navbar {
-    background: abstracts.$gray;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
     
-    font-size: 1rem;
-
-    box-shadow: 0 .4em #B2965F, 0 .5em 1em rgba(0,0,0,.5);
+    font-size: 1.5rem;
 
     padding-left: 3em;
+
+    display: flex;
     
     a {
+        padding-bottom: .3em;
         font-size: 1.3em;
-        margin: 1.7em 1.7em;
+        margin: 1.7em 1.3em;
+        overflow-y: hidden;
+        color: abstracts.$gray-light;
+        transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+    }
+    a:hover,
+    a:focus {
+        box-shadow: 0 .1em abstracts.$brown-light;
+        color: abstracts.$white;
     }
     a#current {
         box-shadow: 0 .1em abstracts.$brown-light;
