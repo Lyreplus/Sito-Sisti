@@ -3,7 +3,7 @@
 $secondary-font: 'Playfair Display', serif;
 $primary-font: 'Oswald', sans-serif;
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-family: $primary-font;
 }
 
@@ -19,6 +19,9 @@ h2 {
     font-size: 2em;
     border-bottom: .05em abstracts.$brown-dark solid;
     padding: 0.1em;
+}
+p {
+    color: abstracts.$white;
 }
 
 a {
