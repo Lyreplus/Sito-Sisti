@@ -87,7 +87,8 @@ body {
     width: 100vw;
     margin-top: 100vh;
     z-index: -1;
-    filter: drop-shadow(0 0em 0.25em rgba(0,0,0,0.7));
+    
+    filter: drop-shadow(0 .5em .6em rgba(0,0,0,0.5));
     
     .clip-path {
         background: abstracts.$gray;
@@ -120,7 +121,7 @@ body {
     height: 2rem;
     width: 83.5%;
     right: 0;
-    z-index: 100;
+    z-index: 50;
     background-color: abstracts.$gray;
 }
 
@@ -149,7 +150,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 30vh;
-    bottom: 88.5vh;
+    bottom: 88.4vh;
     clip-path: polygon(100% 0, 16% 0, 100% 100%);
     background-color: abstracts.$gray;
 }
@@ -159,13 +160,22 @@ body {
     overflow-y: hidden;
 }
 
-.this {
+.shadow-white {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 300vh;
     filter: drop-shadow(0 0em 0.5em rgba(0,0,0,0.7));
+}
+.shadow-gray {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300vh;
+    z-index: -1;
+    filter: drop-shadow(1em 1.1em .6em rgba(0,0,0,0.5));
 }
 
 body {
