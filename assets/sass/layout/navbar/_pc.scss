@@ -1,4 +1,4 @@
-@use '../abstracts/abstracts';
+@use '../../abstracts/abstracts';
 
 .navbar {
     width: 100vw;
@@ -18,11 +18,23 @@
     transition: background-color 200ms ease-in-out;
 
     box-shadow: 0px 0px 25px transparent;
-    
-    a {
+
+    ul {
+        overflow-y: hidden;
+        width: fit-content;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        overflow-y: hidden;
         padding-bottom: .3em;
         font-size: 1.3em;
         margin: 1.3em 1.3em;
+    }
+
+    a {
         overflow-y: hidden;
         color: abstracts.$gray-light;
         transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
@@ -34,5 +46,17 @@
     }
     a#current {
         box-shadow: 0 .1em abstracts.$brown-light;
+    }
+
+
+    .hamburger {
+        display: none;
+        margin: 1.3em 1.3em;
+    }
+    .line1, .line2, .line3 {
+        width: 25px;
+        height: 4px;
+        background: abstracts.$white;
+        margin: 5px;
     }
 }
