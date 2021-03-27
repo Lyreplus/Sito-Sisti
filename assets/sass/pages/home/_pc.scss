@@ -1,4 +1,4 @@
-@use '../abstracts/abstracts';
+@use '../../abstracts/abstracts';
 
 body {
     background-color: abstracts.$brown-light;
@@ -148,7 +148,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 30vh;
-    bottom: 88.4vh;
+    bottom: 88.55vh;
     clip-path: polygon(100% 0, 16% 0, 100% 100%);
     background-color: abstracts.$gray;
 }
