@@ -1,5 +1,23 @@
 @use '../../abstracts/abstracts.scss';
 
 @media only screen and (max-aspect-ratio: 3/2) {
-    
+    .bottom-gray,
+    .bottom-gold {
+        display: none;
+    }
+    .home-img {
+        left: -312px;
+        img{
+            height: 100vh;
+            width: auto;
+        }
+    }
+
+    .movement-pc {
+        display: none;
+    }
+    .movement-mobile {
+        display: block !important;
+        
+    }
 }
