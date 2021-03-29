@@ -8,6 +8,7 @@
     margin: 0;
     border: 0;
     transition: box-shadow background-color 300ms cubic-bezier(0.74, -0.02, 0.22, 1.01);
+    box-shadow: 0 0 .8em rgba(0, 0, 0, .5);
 }
 .button:hover,
 .button:focus {

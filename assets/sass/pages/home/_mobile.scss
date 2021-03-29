@@ -1,6 +1,6 @@
 @use '../../abstracts/abstracts.scss';
 
-@media only screen and (max-aspect-ratio: 3/2) {
+@media only screen and (max-aspect-ratio: 1/1) {
     .bottom-gray,
     .bottom-gold {
         display: none;
@@ -19,5 +19,54 @@
     .movement-mobile {
         display: block !important;
         
+    }    
+
+    .title {
+        font-size: 1.7rem;
+
+        .stable {
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-left: 0 !important;
+        }
+        
+        a {
+            margin-left: 0 !important;
+        }
+    }
+
+    .section2 {
+        font-size: 1.7rem;
+        
+        h2 {
+            margin-top: 1em;
+        }
+
+        filter: none;
+    }
+
+    .clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+
+    .shadow-dark, .shadow-gray {
+        display: none;
+    }
+
+    .section3 {
+        img {
+            width: 100vw;
+            height: unset;
+            clip-path: none !important;
+        }
+    }
+
+    .foo {
+        display: block;
+        top: 0;
+        z-index: 300;
     }
 }

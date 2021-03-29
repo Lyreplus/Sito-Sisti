@@ -23,7 +23,7 @@ body {
     }
     .movement-mobile {
         position: absolute;
-        clip-path: polygon(0 0, 0 0, 0 48%, 0% 100%);
+        clip-path: polygon(0 0, 0 0, 0 74%, 0% 100%);
         height: 100vh;
         width: 100vw;
         background-color: abstracts.$gray-dark;
@@ -36,6 +36,8 @@ body {
         z-index: 300;
         width: 100vw;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
         h1 {
             overflow-y: hidden;
             width: 4.5ch;
@@ -45,7 +47,7 @@ body {
             z-index: 300;
         }
         a {
-            position: absolute;
+            width: fit-content;
             transform: translateY(35vh);
             margin-left: 10vw;
             animation: start2 1500ms ease-in-out;
@@ -209,4 +211,13 @@ body {
 
 body {
     overflow-y: hidden;
+}
+
+.foo {
+    position: absolute;
+    display: none;
+    background-color: abstracts.$gray;
+    height: 3rem;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
