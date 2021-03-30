@@ -80,10 +80,10 @@ body {
 
 .home-img {
     position: absolute;
-    
+    right: 0;
     img {
         height: 100vh;
-        width: 100vw;
+        width: unset;
     }
 }
 

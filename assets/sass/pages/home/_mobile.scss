@@ -1,12 +1,29 @@
 @use '../../abstracts/abstracts.scss';
 
+@media only screen and (max-aspect-ratio: 3/2) {
+    .clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+    .section3 {
+        img {
+            width: 100vw;
+            height: unset;
+            clip-path: none !important;
+        }
+    }
+    .shadow-dark, .shadow-gray {
+        display: none;
+    }
+}
+
 @media only screen and (max-aspect-ratio: 1/1) {
     .bottom-gray,
     .bottom-gold {
         display: none;
     }
     .home-img {
-        left: -312px;
+        left: -412px;
+        right: unset;
         img{
             height: 100vh;
             width: auto;
