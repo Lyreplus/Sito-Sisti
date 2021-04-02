@@ -14,6 +14,11 @@
     .shadow-dark, .shadow-gray {
         display: none;
     }
+
+    .section2 {
+        background-color: abstracts.$gray;
+        padding-bottom: 5rem;
+    }
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {
@@ -22,7 +27,7 @@
         display: none;
     }
     .home-img {
-        left: -412px;
+        left: -422px;
         right: unset;
         img{
             height: 100vh;
