@@ -23,7 +23,7 @@ body {
     }
     .movement-mobile {
         position: absolute;
-        clip-path: polygon(0 0, 0 0, 0 74%, 0% 100%);
+        clip-path: polygon(0 55%, 0 55%, 25% 85%, 0% 100%);
         height: 100vh;
         width: 100vw;
         background-color: abstracts.$gray-dark;
@@ -214,10 +214,5 @@ body {
 }
 
 .foo {
-    position: absolute;
     display: none;
-    background-color: abstracts.$gray;
-    height: 3rem;
-    width: 100vw;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
 }

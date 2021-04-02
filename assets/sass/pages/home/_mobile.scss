@@ -6,9 +6,10 @@
     }
     .section3 {
         img {
-            width: 100vw;
-            height: unset;
+            width: unset !important;
+            height: 70vh !important;
             clip-path: none !important;
+            transform: translateX(-30%);
         }
     }
     .shadow-dark, .shadow-gray {
@@ -17,12 +18,11 @@
 
     .section2 {
         background-color: abstracts.$gray;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
     }
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {
-    .bottom-gray,
     .bottom-gold {
         display: none;
     }
@@ -68,6 +68,7 @@
         }
 
         filter: none;
+        
     }
 
     .clip-path {
@@ -84,5 +85,60 @@
             height: unset;
             clip-path: none !important;
         }
+    }
+
+
+    .bottom-gray {
+        position: absolute;
+        background: transparent;
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        clip-path: none;
+    }
+    .bottom-gray::before {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        background: abstracts.$gray;
+        clip-path: polygon(25% 85%, 0% 100%, 100% 100%);
+    }
+    .bottom-gray::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        background: abstracts.$brown-dark;
+        clip-path: polygon(100% 97%, 25% 85%, 100% 100%);
+    }
+
+    .foo {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 6rem;
+        width: 100vw;
+    }
+    .foo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: abstracts.$gray;
+        height: 6rem;
+        width: 100vw;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+    }
+    .foo::after {
+        content: "";
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: abstracts.$brown-dark;
+        height: 6rem;
+        width: 100vw;
+        clip-path: polygon(0 0, 100% 100%, 0 20%);
     }
 }
