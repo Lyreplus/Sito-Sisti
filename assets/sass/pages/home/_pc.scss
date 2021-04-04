@@ -118,9 +118,7 @@ body {
     font-size: 2rem;
     width: 100vw;
     margin-top: 100vh;
-    z-index: -1;
-    
-    filter: drop-shadow(0 .5em .6em rgba(0,0,0,0.5));
+    z-index: 100;
     
     .clip-path {
         background: abstracts.$gray;
@@ -197,6 +195,7 @@ body {
 .whole {
     position: relative;
     overflow-y: hidden;
+    z-index: none;
 }
 
 .shadow-gray {

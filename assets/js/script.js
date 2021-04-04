@@ -9,6 +9,20 @@ window.onscroll = function (e) {
     }
   }
 
+const appearInfo = () => {
+  let i=0;
+  while (typeof(document.querySelectorAll('.img-info')[i]) != "undefined") {
+    const parentDiv = document.querySelectorAll('.img-info')[i];
+    const infoDiv = document.querySelectorAll('.placeholder')[i];
+
+    parentDiv.addEventListener('click', () => {
+      infoDiv.classList.toggle('info');
+    });
+    i += 1;
+  }
+}
+
+
 
 const navSlide = () => {
   const burger = document.querySelector('.hamburger');
@@ -22,3 +36,4 @@ const navSlide = () => {
 
 
 navSlide();
+appearInfo();
