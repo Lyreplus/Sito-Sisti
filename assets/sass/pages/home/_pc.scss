@@ -23,13 +23,13 @@ body {
     }
     .movement-mobile {
         position: absolute;
-        clip-path: polygon(0 0, 0 0, 0 74%, 0% 100%);
+        clip-path: polygon(0 55%, 0 55%, 25% 85%, 0% 100%);
         height: 100vh;
         width: 100vw;
         background-color: abstracts.$gray-dark;
         z-index: 300;
         display: none;
-        animation: open2 1500ms ease-in-out;
+        animation: open2 1500ms cubic-bezier(0.73, -0.01, 0.45, 0.99);
     }
     .stable {
         position: absolute;
@@ -118,9 +118,7 @@ body {
     font-size: 2rem;
     width: 100vw;
     margin-top: 100vh;
-    z-index: -1;
-    
-    filter: drop-shadow(0 .5em .6em rgba(0,0,0,0.5));
+    z-index: 100;
     
     .clip-path {
         background: abstracts.$gray;
@@ -197,6 +195,7 @@ body {
 .whole {
     position: relative;
     overflow-y: hidden;
+    z-index: none;
 }
 
 .shadow-gray {
@@ -214,10 +213,5 @@ body {
 }
 
 .foo {
-    position: absolute;
     display: none;
-    background-color: abstracts.$gray;
-    height: 3rem;
-    width: 100vw;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
