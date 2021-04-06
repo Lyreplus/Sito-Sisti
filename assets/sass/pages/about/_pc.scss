@@ -1,0 +1,44 @@
+@use '../../abstracts/abstracts';
+
+.content {
+    font-size: 1rem;
+
+    * {
+        overflow: hidden;
+    }
+
+    h2, p {
+        margin: 0rem;
+    }
+
+    h2 {
+        color: red;
+        margin-top: 17vh;
+        color: abstracts.$brown-dark;
+        border: none;
+    }
+    p {
+        
+        margin-top: 25vh;
+        margin-right: 0;
+        font-size: 1.2em;
+        padding-bottom: 1.7em;
+        display: flow-root;
+    }
+    img {
+        float: right;
+        margin-top: 7%;
+        //shape-outside: url(../img/imgbodz.png);
+        shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 50%);
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 50%);
+        width: 40vw;
+        height: auto;
+    }
+
+    .first-part {
+        
+
+        margin: 0 0 15vh 4rem;
+    }
+
+}
