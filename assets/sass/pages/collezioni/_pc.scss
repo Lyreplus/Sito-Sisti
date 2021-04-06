@@ -15,12 +15,27 @@ body{
         overflow-y: hidden;
     }
 
-    .triangle-grey{
-        position: absolute;
-        clip-path: polygon(29% 0, 100% 35%, 100% 0);
-        background-color: abstracts.$gray-dark;
-        z-index: 300;
-        width: 70vw;
-        height: 100vh;
-    }
+    
+}
+
+.triangle-grey{
+    position: absolute;
+    clip-path: polygon(29% 0, 100% 35%, 100% 0);
+    background-color: abstracts.$gray-dark;
+    z-index: 300;
+    width: 70vw;
+    height: 100vh;
+    top:0;
+    right: 0;
+}
+
+.triangle-gold{
+    position: absolute;
+    clip-path: polygon(29% 0, 100% 35%, 100% 0);
+    background-color: abstracts.$brown-light;
+    z-index: 299;
+    width: 70vw;
+    height: 100vh;
+    top: 1.5%;
+    right: 0;
 }
