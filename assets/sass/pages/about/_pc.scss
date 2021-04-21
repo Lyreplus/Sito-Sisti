@@ -1,43 +1,43 @@
 @use '../../abstracts/abstracts';
 
 .content {
-    font-size: 1rem;
-
+    font-size: 1.5rem;
     * {
-        overflow: hidden;
+    overflow: visible;
     }
 
     h2, p {
         margin: 0rem;
+        padding: 0;
     }
 
     h2 {
-        margin-top: 17vh;
+        margin-bottom: .5em;
         color: abstracts.$brown-dark;
         border: none;
+        margin-top: 10vh;
     }
     p {
         color: white;
-        margin-top: 25vh;
-        margin-right: 0;
         font-size: 1.2em;
-        padding-bottom: 1.7em;
-        display: flow-root;
     }
     img {
+        position: relative;
         float: right;
-        margin-top: 7%;
-        //shape-outside: url(../img/imgbodz.png);
-        shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 50%);
+        shape-outside:  polygon(16.41% 229px, 94.89% 212px, 58.46% 74.47%, 10px 48.04%) border-box;
         clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 50%);
-        width: 40vw;
-        height: auto;
+        shape-margin: 4%;
+        width: 50%;
+        top: -10vh;
     }
 
     .first-part {
-        
-
-        margin: 0 0 15vh 4rem;
+        overflow: hidden;
+        position: relative;
+        margin: 10vh 0 5vh 4rem;
     }
+    * {
+        box-sizing: border-box;
+      }
 
 }
