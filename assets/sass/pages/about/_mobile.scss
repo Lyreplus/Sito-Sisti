@@ -1,1 +1,52 @@
 @use '../../abstracts/abstracts';
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    .content {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-aspect-ratio: 3/2) {
+    .content {
+        background: abstracts.$gray-dark;
+        font-size: 1rem;
+        
+        .first-part  {
+            img {
+                height: 65vw;
+                top: 3vh;
+            }
+            .border {
+                height: 67vw;
+                width: 100vw;
+                top: 3vh;
+            }
+
+            h2 {
+                padding-top: 50vw;
+            }
+        }
+
+        .break {
+            height: 15vh;
+        }
+
+        .location {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 5vh;
+
+            h2 {
+                margin-top: 0;
+            }
+
+            img {
+                margin: 0;
+                margin-top: 2em;
+                height: unset;
+                width: 80vw;
+            }
+        }
+    }
+}
