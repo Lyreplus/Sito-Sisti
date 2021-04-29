@@ -1,13 +1,6 @@
 @use '../../abstracts/abstracts';
 
-@media only screen and (max-aspect-ratio: 1/1) {
-    .content {
-        font-size: 1rem;
-    }
-}
-
-
-@media only screen and (max-aspect-ratio: 3/2) {
+@media only screen and (max-aspect-ratio: 2/3) {
     .content {
         background: abstracts.$gray-dark;
         font-size: 1rem;
