@@ -1,4 +1,7 @@
 window.onscroll = function (e) {  
+    let a = (document.documentElement.scrollTop)*0.5-500 + "px";
+    document.getElementById("parallax-img").style.marginTop = a;
+
     if (document.documentElement.scrollTop > 5) {
       document.getElementById("nav").style.backgroundColor = "#232323";
       document.getElementById("nav").style.boxShadow = "0px 0px 35px #000000";

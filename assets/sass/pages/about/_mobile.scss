@@ -22,13 +22,18 @@
         }
 
         .break {
-            height: 15vh;
+            height: 10vh;
+            #parallax-img  {
+                width: unset;
+                height: 70vh;
+                right: 50vw;
+            }
         }
 
         .location {
             flex-wrap: wrap;
             justify-content: center;
-            margin-bottom: 5vh;
+            padding-bottom: 7vh;
 
             h2 {
                 margin-top: 0;
