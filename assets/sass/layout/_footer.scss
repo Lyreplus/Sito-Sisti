@@ -1,6 +1,8 @@
 @use '../abstracts/abstracts';
 
 .footer {
+    position:relative;
+    z-index: 2;
     background-color: black;
     color: abstracts.$white;
     width: 100vw;

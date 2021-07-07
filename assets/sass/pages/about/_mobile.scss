@@ -5,7 +5,9 @@
         background: abstracts.$gray-dark;
         font-size: 1rem;
         
-        .first-part  {
+        .first-part  {  
+            box-shadow: 0px 10px 1.5em rgba(0,0,0,0.7);
+            padding-top: 7.5vh;
             img {
                 height: 65vw;
                 top: 3vh;
@@ -22,7 +24,7 @@
         }
 
         .break {
-            height: 10vh;
+            height: 20vh;
             #parallax-img  {
                 width: unset;
                 height: 70vh;
@@ -31,6 +33,7 @@
         }
 
         .location {
+            box-shadow: 0px -10px 1.5em rgba(0,0,0,0.7);
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 7vh;

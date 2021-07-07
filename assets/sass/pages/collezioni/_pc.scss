@@ -1,7 +1,7 @@
 @use '../../abstracts/abstracts';
 
 body{
-    background: black;
+    background: abstracts.$black;
 }
 
 .initial{
@@ -9,13 +9,25 @@ body{
     
     h1{
         overflow-y: hidden;
+        border: 0;
     }
 
     h2{
         overflow-y: hidden;
+            border: 0;
     }
 
 }
+
+.underline{
+    width: 20%;
+    color: abstracts.$brown-light;
+}
+
+.titlemain{
+    overflow: hidden;
+}
+
 
 .triangle-grey{
         position: absolute;
@@ -24,7 +36,7 @@ body{
         z-index: 300;
         width: 70vw;
         height: 100vh;
-        top:0;
+        top: -10%;
         right: 0;
 }
     
@@ -35,6 +47,6 @@ body{
         z-index: 299;
         width: 70vw;
         height: 100vh;
-        top: 1.5%;
+        top: -8.5%;
         right: 0;
 }

@@ -119,10 +119,11 @@ body {
     width: 100vw;
     margin-top: 100vh;
     z-index: 100;
+    margin-bottom: 0;
     
     .clip-path {
         background: abstracts.$gray;
-        clip-path: polygon(100% 0, 100% 100%, 16% 100%, 0 60%, 0 0);
+        //clip-path: polygon(100% 0, 100% 100%, 16% 100%, 0 60%, 0 0);
     }
     
     .part {    
@@ -157,16 +158,27 @@ body {
 
 .section3 {
     position: relative;
+    overflow: hidden;
+    
+    margin-top: 0;
+
+    .part {
+        width: 100vw;
+        height: 80vh;
+        clip-path: polygon(15vw 0, 100% 27vh, 100% 100%, 0 100%, 0 0);
+    }
 
     img {
-        height: 118vh;
-        width: 100vw;
-        clip-path: polygon(0 0, 100% 27%, 100% 100%, 0% 100%);
+        position: absolute; 
+        width: 110vw;
+        left: -10vw;
+        bottom: -33vh;
     }
 }
 
 .triangle-white {
     position: absolute;
+    z-index: 200;
     width: 100%;
     height: 100%;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
@@ -174,22 +186,23 @@ body {
 }
 
 .triangle-gray {
-    z-index: -1;
+    z-index: 102;
     position: absolute;
-    width: 100vw;
-    height: 30vh;
-    bottom: 88.55vh;
-    clip-path: polygon(100% 0, 16% 0, 100% 100%);
+    width: 85.5vw;
+    height: 24vh;
+    bottom: 56.5vh;
+    right: 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
     background-color: abstracts.$gray;
 }
 
 .shadow-dark {
+    z-index: 200;
     position: absolute;
-    bottom: 70vh;
+    bottom: 37.5vh;
     left: 0;
-    height: 90vh;
-    width: 15%;
-    filter: drop-shadow(0 0 1em rgba(0,0,0,.7));
+    height: 85vh;
+    width: 15vw;
 }
 
 .whole {
@@ -199,13 +212,8 @@ body {
 }
 
 .shadow-gray {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 300vh;
-    z-index: -1;
-    filter: drop-shadow(1em 1.1em .6em rgba(0,0,0,0.5));
+    z-index: 102;
+    //filter: drop-shadow(1em 1.1em .6em rgba(0,0,0,0.5));
 }
 
 body {
@@ -214,4 +222,17 @@ body {
 
 .foo {
     display: none;
+    position: absolute;
+    top: 0;
+    height: 19vh;
+    width: 100vw;
+}
+.foo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: abstracts.$gray;
+    height: 19vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
