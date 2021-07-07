@@ -4,14 +4,6 @@
     .clip-path {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
     }
-    .section3 {
-        img {
-            width: unset !important;
-            height: 70vh !important;
-            clip-path: none !important;
-            transform: translateX(-30%);
-        }
-    }
     .shadow-dark, .shadow-gray {
         display: none;
     }
@@ -23,6 +15,23 @@
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {
+    .section3 {
+        img {
+            width: unset !important;
+            height: 50vh !important;
+            clip-path: none !important;
+            transform: translateX(-30%) translateY(-5%);
+            bottom: -10vh;
+            left: 0;
+        }
+
+        .part {
+            clip-path: none;
+            width: 100vw;
+            height: 40vh;
+        }
+    }
+    
     .bottom-gold {
         display: none;
     }
