@@ -1,5 +1,4 @@
 @use '../../abstracts/abstracts';
-
 body {
     background-color: abstracts.$brown-light;
 }
@@ -11,7 +10,6 @@ body {
     width: 100vw;
     background-color: transform;
     z-index: 300;
-
     .movement-pc {
         position: absolute;
         clip-path: polygon(0 0, 39% 0, 50% 74%, 0% 100%);
@@ -54,15 +52,14 @@ body {
             z-index: 300;
         }
     }
-
     @keyframes start1 {
         0% {
-            transform: translate(30vw,30vh);
+            transform: translate(30vw, 30vh);
         }
     }
     @keyframes start2 {
         0% {
-            transform: translate(30vw,35vh);
+            transform: translate(30vw, 35vh);
         }
     }
     @keyframes open {
@@ -74,7 +71,6 @@ body {
         0% {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
-        
     }
 }
 
@@ -95,6 +91,7 @@ body {
     height: 100vh;
     background-color: abstracts.$gray;
 }
+
 .bottom-gold {
     position: absolute;
     width: 100vw;
@@ -104,14 +101,14 @@ body {
 }
 
 .shadow {
-    filter: drop-shadow(0 -13em 5em rgba(0,0,0,0.7));
+    filter: drop-shadow(0 -13em 5em rgba(0, 0, 0, 0.7));
 }
+
 .shadow-special {
     width: 100vw;
     height: 100vh;
     position: absolute;
 }
-
 
 .section2 {
     position: relative;
@@ -120,19 +117,16 @@ body {
     margin-top: 100vh;
     z-index: 100;
     margin-bottom: 0;
-    
     .clip-path {
         background: abstracts.$gray;
         //clip-path: polygon(100% 0, 100% 100%, 16% 100%, 0 60%, 0 0);
     }
-    
-    .part {    
+    .part {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 10vw;
     }
-
     h2 {
         text-align: center;
         overflow-y: hidden;
@@ -140,12 +134,12 @@ body {
         width: 70vw;
         width: 10ch;
     }
-
     img {
         width: 70vw;
         margin-bottom: 0.75vw;
     }
 }
+
 .ses {
     position: absolute;
     bottom: 118.3vh;
@@ -159,17 +153,14 @@ body {
 .section3 {
     position: relative;
     overflow: hidden;
-    
     margin-top: 0;
-
     .part {
         width: 100vw;
         height: 80vh;
         clip-path: polygon(15vw 0, 100% 27vh, 100% 100%, 0 100%, 0 0);
     }
-
     img {
-        position: absolute; 
+        position: absolute;
         width: 110vw;
         left: -10vw;
         bottom: -33vh;
@@ -227,6 +218,7 @@ body {
     height: 19vh;
     width: 100vw;
 }
+
 .foo::before {
     content: "";
     position: absolute;
@@ -235,4 +227,12 @@ body {
     height: 19vh;
     width: 100vw;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+img.roundImage {
+    border-radius: 8%;
+}
+
+#title2 {
+    scroll-behavior: smooth;
 }
