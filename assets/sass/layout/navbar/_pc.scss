@@ -1,29 +1,21 @@
 @use '../../abstracts/abstracts';
-
 .navbar {
     width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 300;
-    
     font-size: 1.5rem;
-
     padding-left: 3em;
-
     display: flex;
     justify-content: flex-end;
-
-    background-color: transparent; 
+    background-color: transparent;
     transition: background-color 200ms ease-in-out;
-
     box-shadow: 0px 0px 25px transparent;
-
     ul {
         overflow-y: hidden;
         width: fit-content;
         height: fit-content;
-
         display: flex;
         flex-direction: row;
     }
@@ -33,7 +25,6 @@
         font-size: 1.3em;
         margin: 1.3em 1.3em;
     }
-
     a {
         overflow-y: hidden;
         color: abstracts.$gray-light;
@@ -47,13 +38,13 @@
     a#current {
         box-shadow: 0 .1em abstracts.$brown-light;
     }
-
-
     .hamburger {
         display: none;
         margin: 1.1em 1.3em 1.1em 1.3em;
     }
-    .line1, .line2, .line3 {
+    .line1,
+    .line2,
+    .line3 {
         width: 25px;
         height: 4px;
         background: abstracts.$white;
