@@ -9,8 +9,9 @@
     padding-left: 3em;
     display: flex;
     justify-content: flex-end;
-    background-color: transparent;
-    transition: background-color 200ms ease-in-out;
+    //background-color: rgba($color: #232323, $alpha: .6);
+    background: linear-gradient(90deg, rgba(23,23,23,0) 40%, rgba(23,23,23,0.9) 100%);
+    transition: background 200ms ease-in-out;
     box-shadow: 0px 0px 25px transparent;
     ul {
         overflow-y: hidden;
