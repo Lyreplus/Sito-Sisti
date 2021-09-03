@@ -167,7 +167,7 @@ html {
         position: absolute;
         width: 110vw;
         left: -10vw;
-        bottom: -33vh;
+        bottom: -47vh;
     }
 }
 
@@ -239,4 +239,11 @@ img.roundImage {
 
 #title2 {
     scroll-behavior: smooth;
+}
+
+#bottom_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
 }
