@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <div class="navbar" style="background-color: #232323; box-shadow: 0px 0px 35px #000000;">
+        <div class="navbar" style="background-color: #232323; box-shadow: 0px 0px 35px #000000; font-size: 1.3rem;">
             <ul>
                 <li></li>
                 <li><a href="/">Home</a></li>
@@ -32,62 +32,19 @@
         </div>
     </header>
 
+    <div class="background"></div>
+
+    <div class="img img-alt fade-in" id="1" style="background-image: url(https://picsum.photos/seed/sdfssdfs/400/300);"></div>
+    <div class="img img-alt fade-in" id="2" style="background-image: url(https://picsum.photos/seed/forniture/400/300);"></div>
+    <div class="img img-alt fade-in" id="3" style="background-image: url(https://picsum.photos/seed/sASBlkd/400/300);"></div>
+    <div class="img img-alt fade-in" id="4" style="background-image: url(https://picsum.photos/seed/jhjhjhbff/400/300);"></div>
+    <div class="img img-alt fade-in" id="5" style="background-image: url(https://picsum.photos/seed/gdfgfs/400/300);"></div>
+
+    <div class="arrow arrow-left" id="leftArrow"></div>
+    <div class="arrow arrow-right" id="rightArrow"></div>
 
 
-    <div class="initial" ">
-        <br><br><br><br><br><br>
-        <hr class="underline ">
-        <h1>SISTI</h1>
-        <hr class="underline ">
-        <h2 style="color:white ">Collezioni</h2>
-        <div class="triangle-grey "></div>
-        <div class="triangle-gold "></div>
-    </div>
-
-
-    <main>
-
-        <br>
-        <h1 class="titlemain " style="text-align: center; ">Collezioni del negozio</h1>
-
-        <br><br>
-        
-        <div class="slideShow ">
-            <ul class="slideShow__container ">
-                <li class="slideShow__slide ">
-                    <figure class="slideShow__image " style="background-image:url(https://c2.staticflickr.com/8/7668/17188829572_53e8c45aec_h.jpg); "></figure>
-                    <div class="slideShow__titleWrap ">
-                        <h2 class="slideShow__slideTitle ">Barichara</h2>
-                        <div class="slideShow__slideSubTitle ">La Abuelita</div>
-                    </div>
-                </li>
-                <li class="slideShow__slide ">
-                    <figure class="slideShow__image " style="background-image:url(https://c2.staticflickr.com/8/7595/16575563694_5259f740ed_k.jpg); "></figure>
-                    <div class="slideShow__titleWrap ">
-                        <h2 class="slideShow__slideTitle ">Tayrona</h2>
-                        <div class="slideShow__slideSubTitle ">La playa</div>
-                    </div>
-                </li>
-                <li class="slideShow__slide ">
-                    <figure class="slideShow__image " style="background-image:url(https://c2.staticflickr.com/8/7723/17172064766_edf36b7b51_k.jpg); "></figure>
-                    <div class="slideShow__titleWrap ">
-                        <h2 class="slideShow__slideTitle ">Santa Marta</h2>
-                        <div class="slideShow__slideSubTitle ">El Burro</div>
-                    </div>
-                </li>
-                <li class="slideShow__slide ">
-                    <figure class="slideShow__image " style="background-image:url(https://c1.staticflickr.com/9/8714/17164716126_5494165d77_k.jpg); "></figure>
-                    <div class="slideShow__titleWrap ">
-                        <h2 class="slideShow__slideTitle ">Salento</h2>
-                        <div class="slideShow__slideSubTitle ">La vista</div>
-                    </div>
-                </li>
-            </ul>
-            <div class="slideShow__next " style="overflow : hidden ; "><i class="fa fa-angle-right " style="overflow: hidden; "></i></div>
-            <div class="slideShow__prev " style="overflow: hidden; "><i class="fa fa-angle-left " style="overflow: hidden; "></i></div>
-    </div>
-
-    <div class="footer ">
+    <div class="footer" style="font-size: .7rem;">
         <h1>SISTI</h1>
         <p>Cellulare 3355422573, Telefono 0458001802, Mail
             <a href="mailto:sistidesigner@hotmail.it ">sistidesigner@hotmail.it</a> PEC
@@ -95,203 +52,9 @@
         </p>
     </div>
 
-    <script>
-        // Debounce
-        function debounce(a, b, c) {
-            var d;
-            return function() {
-                var e = this,
-                    f = arguments;
-                clearTimeout(d), d = setTimeout(function() {
-                    d = null, c || a.apply(e, f)
-                }, b), c && !d && a.apply(e, f)
-            }
-        }
+    
 
-        var SlideShow = function() {
-
-            var
-                slider,
-                slide,
-                nextButton,
-                prevButton,
-                slideAmount,
-                sliderWidth,
-                title,
-                subTitle,
-                clickCounter,
-                slideCounter;
-
-            var _init = function() {
-                slider = document.getElementsByClassName('slideShow__container')[0];
-                slide = document.getElementsByClassName('slideShow__slide');
-                slideAmount = slide.length;
-                nextButton = document.getElementsByClassName('slideShow__next')[0];
-                prevButton = document.getElementsByClassName('slideShow__prev')[0];
-                title = document.getElementsByClassName('slideShow__slideTitle');
-                subTitle = document.getElementsByClassName('slideShow__slideSubTitle');
-                sliderWidth = parseInt(getComputedStyle(slider).width);
-                clickCounter = 0;
-                slideCounter = 0;
-
-                _eventHandlers();
-                _navButtons();
-                _animateSlideIn(slideCounter);
-            }
-
-            var _eventHandlers = function() {
-                nextButton.addEventListener('click', _slideNext, false);
-                prevButton.addEventListener('click', _slidePrev, false);
-                window.addEventListener('resize', _resize, false);
-            }
-
-            var _navButtons = function() {
-                if (clickCounter === 0) {
-                    prevButton.classList.add('is-inactive')
-                } else {
-                    prevButton.classList.remove('is-inactive')
-                }
-            }
-
-            var _slideNext = function() {
-                clickCounter++;
-                slideCounter = clickCounter - 1;
-                if (clickCounter >= slideAmount) {
-                    clickCounter = 0;
-                    slideCounter = slideAmount - 1;
-                }
-                var tl = new TimelineLite();
-                tl
-                    .add(_animateSlideOut(slideCounter))
-                    .to(slider, .9, {
-                        x: -clickCounter * sliderWidth,
-                        ease: Power2.easeOut
-                    })
-                    .add(_animateSlideIn(clickCounter))
-                _navButtons();
-            }
-
-            var _slidePrev = function() {
-                if (clickCounter > 0) {
-                    clickCounter--;
-
-                    // _getPreviousSlide(clickCounter +1)
-                    var tl = new TimelineLite();
-                    tl
-                        .add(_animateSlideOut(clickCounter + 1))
-                        .to(slider, .9, {
-                            x: '+=' + sliderWidth,
-                            ease: Power2.easeOut
-                        }, '-=0.2')
-                        .add(_animateSlideIn(clickCounter));
-
-                }
-                _navButtons();
-            }
-
-            var _animateSlideIn = function(index) {
-                var currentSlide = slide[index];
-                var title = currentSlide.children[1].children[0];
-                var subTitle = currentSlide.children[1].children[1];
-                var image = currentSlide.children[0];
-
-                var splitTitle = new SplitText(title);
-                var revertTitle = function() {
-                    splitTitle.revert();
-                }
-
-                TweenLite.set(title, {
-                    perspective: 400
-                });
-
-                var tl = new TimelineLite({
-                    onComplete: revertTitle
-                });
-                tl
-                    .set(title, {
-                        opacity: 1
-                    })
-                    .staggerFrom(splitTitle.chars, 0.8, {
-                        opacity: 0,
-                        scale: 0,
-                        y: 80,
-                        rotationX: 180,
-                        transformOrigin: "0% 50% -50 ",
-                        ease: Back.easeOut
-                    }, 0.03)
-                    .fromTo(subTitle, 0.6, {
-                        y: 50,
-                        opacity: 0
-                    }, {
-                        y: 0,
-                        opacity: 1
-                    }, '-=0.3')
-                    .to(image, 0.4, {
-                        scale: 1,
-                        ease: Power2.easeOut
-                    }, '-=0.6')
-                return tl;
-            }
-
-            var _animateSlideOut = function(index) {
-                var currentSlide = slide[index];
-                var title = currentSlide.children[1].children[0];
-                var subTitle = currentSlide.children[1].children[1];
-                var image = currentSlide.children[0];
-
-                var tl = new TimelineLite();
-                tl
-                    .to(title, 0.3, {
-                        opacity: 0
-                    })
-                    .to(subTitle, 0.3, {
-                        y: 50,
-                        opacity: 0
-                    }, '-=0.3')
-                    .to(image, 0.4, {
-                        scale: 0.8,
-                        ease: Power2.easeIn
-                    }, '-=0.3')
-                return tl;
-            }
-
-            var _resize = debounce(function() {
-                sliderWidth = parseInt(getComputedStyle(slider).width);
-                sliderOffset = sliderWidth * clickCounter;
-                slider.style.transform = 'matrix(1, 0, 0, 1, -' + sliderOffset + ', 0)'
-            }, 50)
-
-            return {
-                init: _init
-            }
-
-        }();
-
-        SlideShow.init();
-    </script>
-
-
-    <!-- 
-  <label for="s1 " id="slide1 ">
-  	<img src="https://cdn.discordapp.com/attachments/384361282138144779/821808691681558608/unknown.png " height="100% " width="100% ">
-  </label>
-  <label for="s2 " id="slide2 ">
-  	  	<img src="https://cdn.discordapp.com/attachments/384361282138144779/821808722795298926/unknown.png " height="100% " width="100% ">
-  </label>
-  <label for="s3 " id="slide3 ">
-  	  	<img src="https://cdn.discordapp.com/attachments/384361282138144779/821808775689273355/unknown.png " height="100% " width="100% ">
-  </label>
-  <label for="s4 " id="slide4 ">
-  	  	<img src="https://cdn.discordapp.com/attachments/384361282138144779/821808741413421084/unknown.png " height="100% " width="100% ">
-  </label>
-  <label for="s5 " id="slide5 ">
-  	  	<img src="https://cdn.discordapp.com/attachments/384361282138144779/821808804374380552/unknown.png " height="100% " width="100% ">
-  </label>
--->
-
-
-    <script src="assets/js/collezioni.js "></script>
-    </main>
+    <script src="assets/js/collezioni.js"></script>
 
 </body>
 
