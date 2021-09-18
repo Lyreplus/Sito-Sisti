@@ -1,0 +1,28 @@
+        @use '../../abstracts/abstracts';
+        body {
+            background: abstracts.$black;
+            background-image: none;
+            height: 100%;
+        }
+        
+        p {
+            overflow: hidden;
+        }
+        
+        .pagecontent {
+            margin-left: 7vw;
+            margin-top: 5vh;
+            background-position: center;
+            font-size: 1.5rem;
+            display: flex;
+            .col {
+                flex: 50%;
+            }
+            h2 {
+                overflow: hidden;
+                margin-bottom: .5em;
+                color: abstracts.$brown-dark;
+                border: none;
+                border: none;
+            }
+        }
