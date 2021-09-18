@@ -1,0 +1,54 @@
+        @use '../../abstracts/abstracts';
+        html {
+            height: 100%;
+        }
+        
+        body {
+            background: abstracts.$black;
+            background-image: none;
+            height: 100%;
+        }
+        
+        p {
+            overflow: hidden;
+        }
+        
+        .pagecontent {
+            height: 100%;
+            margin-left: 7vw;
+            margin-top: 5vh;
+            background-position: center;
+            background-color: abstracts.$gray;
+            font-size: 1.5rem;
+            display: flex;
+            .col {
+                flex: 50%;
+            }
+            h2 {
+                overflow: hidden;
+                margin-bottom: .5em;
+                color: abstracts.$brown-dark;
+                border: none;
+                border: none;
+            }
+        }
+        
+        #text {
+            background-color: abstracts.$gray-dark;
+        }
+        
+        #shape {
+            clip-path: polygon(0 0, 35% 0, 50% 100%, 0% 100%);
+            background-color: abstracts.$gray-dark;
+        }
+        
+        #gray {
+            background-color: abstracts.$gray !important;
+            border: 0vw;
+            margin: 0%;
+            padding: 0%;
+            margin-right: 2vw;
+            td {
+                padding: 1vh;
+            }
+        }
