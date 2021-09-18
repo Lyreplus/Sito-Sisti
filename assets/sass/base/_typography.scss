@@ -1,9 +1,12 @@
 @use '../abstracts/abstracts.scss';
-
-$secondary-font: 'Playfair Display', serif;
-$primary-font: 'Oswald', sans-serif;
-
-h1, h2, h3, p {
+$secondary-font: 'Playfair Display',
+serif;
+$primary-font: 'Oswald',
+sans-serif;
+h1,
+h2,
+h3,
+p {
     font-family: $primary-font;
 }
 
@@ -15,12 +18,14 @@ h1 {
     padding: 0.1em;
     text-shadow: 0 0 .2em #000;
 }
+
 h2 {
     color: abstracts.$white;
     font-size: 2em;
     border-bottom: .05em abstracts.$brown-dark solid;
     padding: 0.1em;
 }
+
 p {
     color: abstracts.$white;
     font-weight: 200;
@@ -35,6 +40,11 @@ a {
     color: abstracts.$brown-light;
     text-decoration: none;
     font-family: $primary-font;
-
     font-size: 1em;
+}
+
+.textinput,
+select,
+button {
+    font-family: $primary-font;
 }
