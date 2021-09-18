@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-end;
     //background-color: rgba($color: #232323, $alpha: .6);
-    background: linear-gradient(90deg, rgba(23,23,23,0) 40%, rgba(23,23,23,0.9) 100%);
+    background: linear-gradient(90deg, rgba(23,23,23,0) 40%, rgba(23,23,23,1) 100%);
     transition: background 200ms ease-in-out;
     box-shadow: 0px 0px 25px transparent;
     ul {

@@ -9,18 +9,3 @@ window.onscroll = function(e) {
         document.getElementById("nav").style.boxShadow = "0px 0px 35px transparent";
     }
 }
-
-const appearInfo = () => {
-    let i = 0;
-    while (typeof(document.querySelectorAll('.img-info')[i]) != "undefined") {
-        const parentDiv = document.querySelectorAll('.img-info')[i];
-        const infoDiv = document.querySelectorAll('.placeholder')[i];
-
-        parentDiv.addEventListener('click', () => {
-            infoDiv.classList.toggle('info');
-        });
-        i += 1;
-    }
-}
-
-appearInfo();
