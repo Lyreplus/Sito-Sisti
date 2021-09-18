@@ -39,14 +39,14 @@ body {
         h1 {
             overflow-y: hidden;
             width: 4.5ch;
-            transform: translateY(30vh);
+            transform: translateY(20vh);
             margin-left: 10vw;
             animation: start1 1500ms ease-in-out;
             z-index: 300;
         }
         a {
             width: fit-content;
-            transform: translateY(35vh);
+            transform: translateY(30vh) translateX(7vw);
             margin-left: 10vw;
             animation: start2 1500ms ease-in-out;
             z-index: 300;
