@@ -30,18 +30,19 @@
     <br><br><br><br><br><br><br>
 
     <div class="pagecontent">
-        <div class="col" id="text">
+        <div class="col" id="text" style="margin:-0.5vw;padding: 0.5vw; font-size: 1.75rem;">
             <h2>Ritieni di essere interessato?</h2>
-            <p>
+            <p style="padding-bottom: 2vh;">
                 Minim in aute est eiusmod do eu sit mollit quis cillum. Voluptate ea qui aliquip aute qui aute. Lorem mollit aliqua consequat culpa non sit nisi mollit est non. Fugiat do proident officia incididunt laboris Lorem tempor mollit qui enim ad occaecat fugiat
                 eiusmod.
             </p>
-            <h2>Oppure scrivi alla mail</h2>
+            <h2 style="padding-top: 2vh;">Oppure scrivi alla mail</h2>
             <p>Labore elit enim sint mollit id cillum ad do nostrud consectetur. Occaecat voluptate velit amet commodo voluptate quis. Velit ipsum excepteur eu aliquip labore consequat occaecat in.</p>
         </div>
         <div id="shape" class="col"></div>
         <div id="gray" class="col">
-            <form action="https://getform.io/f/5016dc8e-2855-450a-a24b-a8245b5fc45a" method="POST">
+
+            <form action="https://getform.io/f/5016dc8e-2855-450a-a24b-a8245b5fc45a" method="POST" style="margin-left:auto; margin-right: auto; margin-top: 10vh;">
                 <table>
                     <col width="50%" />
                     <col width="50%" />
@@ -282,10 +283,10 @@
                     <tr>
                         <!-- <td colspan="2 "><input type="text " placeholder="Messaggio " name="Messaggio " style="width:100%; "></td>-->
                         <td colspan="2 ">
-                            <textarea name="Messaggi " class="textinput " placeholder="Messaggio " rows=" 10 " style="width: 100%; "></textarea></td>
+                            <textarea name="Messaggi " class="textinput " placeholder="Messaggio " rows="300" style="width: 100%; "></textarea></td>
                     </tr>
                     <tr>
-                        <td><button class="g-recaptcha" data-sitekey="6Le_uXYcAAAAAFrJw4IMEomsFeaAZsyAK7dfSGJJ" data-callback='onSubmit' data-action='submit'>Submit</button></td>
+                        <td><button data-action='submit'>Submit</button></td>
                     </tr>
                 </table>
 
@@ -296,12 +297,8 @@
 
     </div>
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-        }
-    </script>
+    <script src="assets/js/main.js "></script>
+
 </body>
 
 </html>
