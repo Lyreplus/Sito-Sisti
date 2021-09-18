@@ -28,6 +28,12 @@ h2 {
 
 p {
     color: abstracts.$white;
+    font-weight: 200;
+    line-height: 1.2em;
+
+    strong {
+        font-weight: 300;
+    }
 }
 
 a {

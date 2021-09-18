@@ -18,12 +18,16 @@
         margin-bottom: .5em;
         color: abstracts.$brown-dark;
         border: none;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
     p {
-        color: white;
+        color: #ebebeb;
         font-size: 1.2em;
         margin-right: 8vw;
+
+        strong {
+            color: white;
+        }
     }
     .first-part {
         box-shadow: 0px 20px 1.5em rgba(0,0,0,0.7);
@@ -87,6 +91,7 @@
         padding-bottom: 5vh;
         padding: 5vh 8vw 15rem 8vw;
         align-items: center;
+        margin-bottom: 3vh;
 
         img {
             height: 20vw;
@@ -94,6 +99,7 @@
             margin-left: 2rem;
             filter: drop-shadow(0 0 2em rgba(0,0,0,0.7));
             transition: transform 200ms ease-in-out;
+            margin-top: 10vh;
         }
         img:hover {
             transform: scale(1.05);
