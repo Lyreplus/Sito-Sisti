@@ -1,6 +1,16 @@
 @use '../../abstracts/abstracts.scss';
 
 @media only screen and (max-aspect-ratio: 1/1) {
+    .stable {
+        a {
+            margin-right: 15vw;
+            margin-top: -5vh;
+        }
+        h1 {
+            margin-top: 10vh;
+            margin-bottom: 0;
+        }
+    }
     .section3 {
         img {
             clip-path: none !important;

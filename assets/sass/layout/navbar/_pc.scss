@@ -19,12 +19,12 @@
         height: fit-content;
         display: flex;
         flex-direction: row;
-        margin-right: 7em;
+        margin-right: 5em;
     }
     li {
         overflow-y: hidden;
         padding-bottom: .3em;
-        font-size: 1.6em;
+        font-size: 1.4em;
         margin: 1.1em 1.3em;
     }
     a {
@@ -42,7 +42,7 @@
     }
     .hamburger {
         display: none;
-        margin: 1.1em 1.3em 1.1em 1.3em;
+        margin: .9em 1.1em .9em 1.1em;
     }
     .line1,
     .line2,
@@ -63,9 +63,9 @@
     
         h1 {
             overflow-y: hidden;
-            font-size: 3em;
+            font-size: 2.8em;
             padding: 0;
-            height: 4.5rem;
+            height: 4rem;
             margin: auto 0 auto 0;
             animation: heightChange 700ms ease-in-out;
             position: relative;

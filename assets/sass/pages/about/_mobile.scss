@@ -6,8 +6,9 @@
         font-size: 1rem;
         
         .first-part  {  
-            box-shadow: 0px 10px 1.5em rgba(0,0,0,0.7);
-            padding-top: 7.5vh;
+            box-shadow: 0px 30px 1.5em rgba(0,0,0,.4);
+            padding-top: 6vh;
+            padding-bottom: 4em;
             img {
                 height: 65vw;
                 top: 3vh;
@@ -19,7 +20,7 @@
             }
 
             h2 {
-                padding-top: 50vw;
+                padding-top: 65vw;
             }
         }
 
@@ -28,18 +29,24 @@
             #parallax-img  {
                 width: unset;
                 height: 70vh;
-                right: 50vw;
+                right: 0vw;
             }
         }
 
         .location {
-            box-shadow: 0px -10px 1.5em rgba(0,0,0,0.7);
+            box-shadow: 0px -30px 1.5em rgba(0,0,0,0.4);
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 7vh;
+            padding-top: 1em;
+            margin: 0;
 
             h2 {
-                margin-top: 0;
+                margin-top: 1em;
+            }
+
+            p {
+                margin: 0;
             }
 
             img {

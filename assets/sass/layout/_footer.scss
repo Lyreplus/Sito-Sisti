@@ -38,9 +38,17 @@
         position: relative;
         bottom: 1vh;
 
+        p {
+            margin: 0;
+            width: auto;
+            padding: 0;
+            padding-right: 2em;
+        }
+
         h1 {
             font-size: 2rem;
-            padding: 0 3rem 0 1.5rem;
+            padding: auto;
+            padding-right: 2em;
         }
     }
 }
