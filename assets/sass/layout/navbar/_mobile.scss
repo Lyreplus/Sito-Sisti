@@ -1,6 +1,40 @@
 @use '../../abstracts/abstracts.scss';
 
-@media only screen and (max-aspect-ratio: 3/2) {
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        text-align: right;
+        height: 92vh;
+        transform: translateY(-80%);
+        transition: all 250ms ease-in-out;
+        ul {
+            flex-direction: column;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        li {
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+        a {
+            margin: 0 1.5em;
+        }
+        .hamburger {
+            position: absolute;
+            display: block;
+            bottom: 0vh;
+            cursor: pointer;
+        }
+        .titolo {
+            margin: 1em 1.5em;
+        }
+    }
+    .navbar-active {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .navbar {
         text-align: right;
         height: 92vh;
@@ -30,5 +64,4 @@
     .navbar-active {
         transform: translateY(0);
     }
-
 }

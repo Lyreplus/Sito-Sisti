@@ -1,5 +1,41 @@
 @use '../../abstracts/abstracts.scss';
 
-@media only screen and (max-aspect-ratio: 3/2) {
+@media only screen and (max-width: 850px) {
+    .slide-show {
+        width: 120vw;
+        height: 100vh;
+        position: absolute;
+        top: 7vh;
+        overflow-y: hidden;
+        overflow-x: visible;
+    }
+    #invisible {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background: abstracts.$gray-dark !important;
+    }
+    .slide-show, .background, .arrow {
+        display: none;
+    }
 
+    .rotate {
+        width: 100vw;
+        height: 100vh;
+        font-size: 2rem;
+
+        p {
+            position: absolute;
+            top: 30vh;
+            margin: 1em;
+            text-align: center;
+            color: abstracts.$brown-light;
+
+            b {
+                font-weight: 500;
+            }
+        }
+    }   
 }

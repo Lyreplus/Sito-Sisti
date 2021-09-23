@@ -129,3 +129,23 @@
         clip-path: polygon(0 0, 100% 100%, 0 20%);
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .triangle-gray {
+        top: unset;
+        bottom: 47vw;
+    }
+    .triangle-white {
+        bottom: 19vw;
+        clip-path: polygon(0 40%, 0% 100%, 100% 60%);
+    }
+    body {
+        background: abstracts.$brown-light !important;
+    }
+
+
+    .stable {
+        font-size: 1.5rem;
+        left: -5vw;
+    }
+}
